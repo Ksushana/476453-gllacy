@@ -35,73 +35,118 @@
       </ul>
       <h1>Сливочное мороженое</h1>
 
+      <section class="sort-datas">
+       <form class="sort-way" action="catalog.html" method="post">
+         <p>Сортировка:</p>
+         <select  name="sort">
+           <option value="popularuty">по популярности</option>
+         </select>
+       </form>
 
-      <!--тут будут формы сортировки-->
+       <form class="sort-price" action="catalog.html" method="post">
+
+<!--тут будут формы сортировки-->
+
+       </form>
+
+       <form class="fat-price" action="catalog.html" method="post">
+         <p>Жирность:</p>
+         <label>
+           <input type="radio" name="fat" value="0">
+           0%
+         </label>
+         <label>
+           <input type="radio" name="fat" value="10">
+           до 10%
+         </label>
+         <label>
+           <input type="radio" name="fat" value="30">
+           до 30%
+         </label>
+         <label>
+           <input type="radio" name="fat" value="+30">
+           выше 30%
+         </label>
+       </form>
+
+       <form class="supplements" action="catalog.html" method="post">
+         <p>Наполнители:</p>
+         <input type="checkbox" name="supplements" id="chocolate" checked>
+         <label for="chocolate">шоколадные</label>
+         <input type="checkbox" name="supplements" id="chocolate" checked>
+         <label for="chocolate">сахарные присыпки</label>
+         <input type="checkbox" name="supplements" id="fruits">
+         <label for="fruits">фрукты</label>
+         <input type="checkbox" name="supplements" id="syrup">
+         <label for="syrup">сиропы</label>
+         <input type="checkbox" name="supplements" id="jam">
+         <label for="jam">джемы</label>
+       </form>
 
       <section class="products">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
         <ul class="products-list">
           <li class="product-item">
             <h3 class="product-header">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="orange-cream.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-            <b> 310 <span class="product-price-value">/кг</span></b>
+            <img src="orange-cream.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+            <b>310 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочно-кофейное с кусочками шоколада</h3>
-            <img src="coffee-cream.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-            <b> 380 <span class="product-price-value">/кг</span></b>
+            <img src="coffee-cream.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
+            <b>380 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="strawberry-cream.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-            <b> 355 <span class="product-price-value">/кг</span></b>
+            <img src="strawberry-cream.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
+            <b>355 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочное крем-брюле с карамельной подливкой</h3>
-            <img src="creme-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-            <b> 415 <span class="product-price-value">/кг</span></b>
+            <img src="creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267">
+            <b>415 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
 
           <li class="product-item">
             <h3 class="product-header">Сливочное с брусничным джемом</h3>
-            <img src="foxberry.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
-            <b> 325 <span class="product-price-value">/кг</span></b>
+            <img src="foxberry.jpg" alt="Сливочное мороженое с брусничным джемом" width="267" height="267">
+            <b>325 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочно-черничное с цельными ягодами черники </h3>
-            <img src="blackberry.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
-            <b> 410 <span class="product-price-value">/кг</span></b>
+            <img src="blackberry.jpg" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="267" height="267">
+            <b>410 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
            <h3 class="product-header">Сливочно-лимонное с карамельной присыпкой</h3>
-            <img src="limon.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
-            <b> 375 <span class="product-price-value">/кг</span></b>
+            <img src="limon.jpg" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="267" height="267">
+            <b>375 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочное с шоколадной стружкой</h3>
-            <img src="cream-and-chocolate.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
-            <b> 320 <span class="product-price-value">/кг</span></b>
+            <img src="cream-and-chocolate.jpg" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
+            <b>320 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
 
           <li class="product-item">
             <h3 class="product-header">Сливочно-ванильное с кусочками шоколада</h3>
-            <img src="vanilla.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
-            <b> 440 <span class="product-price-value">/кг</span></b>
+            <img src="vanilla.jpg" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="267" height="267">
+            <b>440 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочноe с ментоловым сиропом</h3>
-            <img src="menthol.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
-            <b> 435 <span class="product-price-value">/кг</span></b>
+            <img src="menthol.jpg" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
+            <b>435 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
            <h3 class="product-header">Сливочное с кусочками черного шоколада</h3>
-            <img src="dark-chocokate.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
-            <b> 355 <span class="product-price-value">/кг</span></b>
+            <img src="dark-chocokate.jpg" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267">
+            <b>355 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
           <li class="product-item">
             <h3 class="product-header">Сливочное с мятным сиропом</h3>
-            <img src="menta.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
-            <b> 415 <span class="product-price-value">/кг</span></b>
+            <img src="menta.jpg" alt="Сливочное мороженое с мятным сиропом" width="267" height="267">
+            <b>415 &#8381;<span class="product-price-value">/кг</span></b>
           </li>
          </ul>
       </section>
