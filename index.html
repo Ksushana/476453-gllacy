@@ -31,14 +31,46 @@
       <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
       <section>
         <div class="slider">
-          <input type="radio" name="toggle" id="btn-1" checked>
-          <input type="radio" name="toggle" id="btn-2">
-          <input type="radio" name="toggle" id="btn-3">
+
+        <!--первый вариант переключателей-->
+
           <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <div class="slider-control-1">
+              <input type="radio" name="toggle" id="btn-1" checked>
+              <label for="btn-1"></label>
+            </div>
+            <div class="slider-control-2">
+              <input type="radio" name="toggle" id="btn-2">
+              <label for="btn-2"></label>
+            </div>
+            <div class="slider-control-3">
+              <input type="radio" name="toggle" id="btn-3">
+              <label for="btn-3"></label>
+            </div>
           </div>
+
+          <!-- второй вариант переключателей
+
+          <ul class="slides-switches">
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Первый слайд
+              </button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Второй слайд
+              </button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Третий слайд
+              </button>
+            </li>
+          </ul>
+
+          -->
+
           <div class="slider-inner">
             <div class="slider-1">
               <img src="img/slider-1.png" alt="Мороженое крем-брюле и пломбир с малиновым джемом" width="1079" height="854">
@@ -62,12 +94,12 @@
         <div class="raspberry">
           <h3 class="offer-header">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <input type="submit" value="Хочу варенье!" class="button">
+          <a href="#" class="button">"Хочу варенье!"</a>
         </div>
         <div class="chocolate">
           <h3 class="offer-header"> Шоколадки даром! </h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <input type="submit" value="Хочу шоколадки!" class="button">
+          <a href="#" class="button">Хочу шоколадки!</a>
         </div>
       </section>
 
