@@ -38,16 +38,17 @@
     <section class="sort-datas">
        <form class="catalog-sort" action="index.html" method="post">
         <fieldset class="sort-way">
-          <p>Сортировка:</p>
+          <legend>Сортировка:</legend>
           <select  name="sort">
            <option value="popularuty">по популярности</option>
           </select>
         </fieldset>
         <fieldset class="sort-price">
-    <!--тут будут формы сортировки-->
+
+          <input type="range" multiple min="0" step="1" max="10" data-values="1 9">
         </fieldset>
         <fieldset class="fat-range">
-          <p>Жирность:</p>
+          <legend>Жирность:</legend>
             <p class="radio-fat">
               <label>
                 <input type="radio" name="fat" value="0">
@@ -74,27 +75,27 @@
             </p>
         </fieldset>
         <fieldset class="supplements">
-          <p>Наполнители:</p>
-            <p class="supplements-type">
-              <input type="checkbox" name="supplements" id="chocolate" checked>
-              <label for="chocolate">шоколадные</label>
-            </p>
-            <p class="supplements-type">
-              <input type="checkbox" name="supplements" id="chocolate" checked>
-              <label for="chocolate">сахарные присыпки</label>
-            </p>
-            <p class="supplements-type">
-              <input type="checkbox" name="supplements" id="fruits">
-              <label for="fruits">фрукты</label>
-            </p>
-            <p class="supplements-type">
-              <input type="checkbox" name="supplements" id="syrup">
-              <label for="syrup">сиропы</label>
-            </p>
-            <p class="supplements-type">
-              <input type="checkbox" name="supplements" id="jam">
-              <label for="jam">джемы</label>
-            </p>
+          <legend>Наполнители:</legend>
+          <p class="supplements-type">
+            <input type="checkbox" name="supplements" id="chocolate" checked>
+            <label for="chocolate">шоколадные</label>
+          </p>
+          <p class="supplements-type">
+            <input type="checkbox" name="supplements" id="chocolate" checked>
+            <label for="chocolate">сахарные присыпки</label>
+          </p>
+          <p class="supplements-type">
+            <input type="checkbox" name="supplements" id="fruits">
+            <label for="fruits">фрукты</label>
+          </p>
+          <p class="supplements-type">
+            <input type="checkbox" name="supplements" id="syrup">
+            <label for="syrup">сиропы</label>
+          </p>
+          <p class="supplements-type">
+            <input type="checkbox" name="supplements" id="jam">
+            <label for="jam">джемы</label>
+          </p>
         </fieldset>
         <button type="submit">Применить</button>
       </form>
