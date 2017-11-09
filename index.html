@@ -24,8 +24,30 @@
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="site-search"><a href="#">Поиск</a></li>
-          <li class="login-link"><a href="#">Вход</a></li>
+          <li class="site-search">
+            <div class="site-search-block">
+              <a href="#">Поиск</a>
+              <div class="modal modal-search">
+                <form action="index.html" method="get">
+                  <input type="search" value="Что ищем?">
+                </form>
+              </div>
+          </li>
+          <li class="login-link">
+           <div class="">
+            <a href="#">Вход</a>
+            <div class="modal modal-login">
+              <form action="index.html" method="post">
+                <input type="email" value="Электронная почта">
+                <input type="password" value="Пароль">
+              </form>
+              <input class="button" type="submit" name="Login button" value="Войти">
+              <ul class="login-help">
+                <li><a href="#">Забыли пароль?</a></li>
+                <li><a href="#">Новая регистрация</a></li>
+              </ul>
+            </div>
+          </li>
           <li class="cart"><a href="#">Пусто</a></li>
         </ul>
       </nav>
@@ -193,26 +215,5 @@
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
     </footer>
-
-
-    <section class="modal modal-search">
-      <form action="index.html" method="get">
-        <input type="search" value="Что ищем?">
-      </form>
-    </section>
-
-    <section class="modal modal-login">
-      <form action="index.html" method="post">
-        <input type="email" value="Электронная почта">
-        <input type="password" value="Пароль">
-      </form>
-      <input class="button" type="submit" name="Login button" value="Войти">
-      <ul class="login-help">
-        <li><a href="#">Забыли пароль?</a></li>
-        <li><a href="#">Новая регистрация</a></li>
-      </ul>
-    </section>
-
-
   </body>
 </html>
