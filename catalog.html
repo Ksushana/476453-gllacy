@@ -35,71 +35,70 @@
       </ul>
       <h1>Сливочное мороженое</h1>
 
-      <section class="sort-datas">
-       <form class="sort-way" action="catalog.html" method="post">
-         <p>Сортировка:</p>
-         <select  name="sort">
+    <section class="sort-datas">
+       <form class="catalog-sort" action="index.html" method="post">
+        <fieldset class="sort-way">
+          <p>Сортировка:</p>
+          <select  name="sort">
            <option value="popularuty">по популярности</option>
-         </select>
-       </form>
-
-       <form class="sort-price" action="catalog.html" method="post">
-
-<!--тут будут формы сортировки-->
-
-       </form>
-
-       <form class="fat-range" action="catalog.html" method="post">
-         <p>Жирность:</p>
-           <div class="radio-fat">
-             <label>
-               <input type="radio" name="fat" value="0">
-               0%
-             </label>
-           </div>
-           <div class="radio-fat">
-             <label>
-               <input type="radio" name="fat" value="10">
-               до 10%
-             </label>
-           </div>
-           <div class="radio-fat">
-             <label>
-               <input type="radio" name="fat" value="30">
-               до 30%
-             </label>
-           </div>
-           <div class="radio-fat">
-             <label>
-               <input type="radio" name="fat" value="+30">
-               выше 30%
-             </label>
-           </div>
-       </form>
-
-       <form class="supplements" action="catalog.html" method="post">
-         <p>Наполнители:</p>
-           <div class="supplements-type">
-             <input type="checkbox" name="supplements" id="chocolate" checked>
-             <label for="chocolate">шоколадные</label>
-           </div>
-           <div class="supplements-type">
-             <input type="checkbox" name="supplements" id="chocolate" checked>
-             <label for="chocolate">сахарные присыпки</label>
-           </div>
-           <div class="supplements-type">
-             <input type="checkbox" name="supplements" id="fruits">
-             <label for="fruits">фрукты</label>
-           </div>
-           <div class="supplements-type">
-             <input type="checkbox" name="supplements" id="syrup">
-             <label for="syrup">сиропы</label>
-           </div>
-           <div class="supplements-type">
-             <input type="checkbox" name="supplements" id="jam">
-             <label for="jam">джемы</label>
-           </div>
-       </form>
+          </select>
+        </fieldset>
+        <fieldset class="sort-price">
+    <!--тут будут формы сортировки-->
+        </fieldset>
+        <fieldset class="fat-range">
+          <p>Жирность:</p>
+            <p class="radio-fat">
+              <label>
+                <input type="radio" name="fat" value="0">
+                0%
+              </label>
+            </p>
+            <p class="radio-fat">
+              <label>
+                <input type="radio" name="fat" value="10">
+                до 10%
+              </label>
+            </p>
+            <p class="radio-fat">
+              <label>
+                <input type="radio" name="fat" value="30">
+                до 30%
+              </label>
+            </p>
+            <p class="radio-fat">
+              <label>
+                <input type="radio" name="fat" value="+30">
+                выше 30%
+              </label>
+            </p>
+        </fieldset>
+        <fieldset class="supplements">
+          <p>Наполнители:</p>
+            <p class="supplements-type">
+              <input type="checkbox" name="supplements" id="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+            </p>
+            <p class="supplements-type">
+              <input type="checkbox" name="supplements" id="chocolate" checked>
+              <label for="chocolate">сахарные присыпки</label>
+            </p>
+            <p class="supplements-type">
+              <input type="checkbox" name="supplements" id="fruits">
+              <label for="fruits">фрукты</label>
+            </p>
+            <p class="supplements-type">
+              <input type="checkbox" name="supplements" id="syrup">
+              <label for="syrup">сиропы</label>
+            </p>
+            <p class="supplements-type">
+              <input type="checkbox" name="supplements" id="jam">
+              <label for="jam">джемы</label>
+            </p>
+        </fieldset>
+        <input type="submit" name="Submit" value="Применить"/>
+      </form>
+    </section>
 
       <section class="products">
         <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
@@ -233,23 +232,23 @@
       <section class="modal modal-full-cart">
         <table>
           <tr>
-            <td><img src="img/svg-gllacy/cross-small.svg" alt="значек удаления товара из карзины" height="11" width="11"></td>
+            <td><button type="button" name="remove_from_cart"></button></td>
             <td><img src="img/icecream-cart-1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
             <td>Пломбир с апельсиновым джемом</td>
             <td>1,5 кг х <span>200 руб.</span></td>
             <td>300 руб.</td>
           </tr>
           <tr>
-            <td><img src="img/svg-gllacy/cross-small.svg" alt="значек удаления товара из карзины" height="11" width="11"></td>
+            <td><button type="button" name="remove_from_cart"></button></td>
             <td><img src="img/icecream-cart-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
             <td>1,5 кг х <span>300 руб.</span></td>
             <td>450 руб.</td>
           </tr>
         </table>
-        <hr align="center"/>
         <p>Итого:<span>750 руб.</span></p>
-        <input class="button" type="submit" name="submit button" value="Оформить заказ">
+        <a class="button" href="order.html">Оформить заказ</a>
+
       </section>
 
       <section class="modal modal-chosen-item">
