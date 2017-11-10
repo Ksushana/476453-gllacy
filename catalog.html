@@ -69,13 +69,13 @@
           <select  name="sort">
            <option value="popularuty">по популярности</option>
            <option value="cheap">сначала недорогие</option>
-           <option value=expensive"">сначала дорогие</option>
+           <option value="expensive">сначала дорогие</option>
            <option value="fat-range">по жирности</option>
           </select>
         </fieldset>
         <fieldset class="sort-price">
           <legend>Цена: 100 руб. – 500 руб.</legend>
-          <input type="range" multiple min="100" step="10" max="500" data-values="100 500">
+          <input type="range" min="100" step="10" max="500" data-values="100 500">
         </fieldset>
         <fieldset class="fat-range">
           <legend>Жирность:</legend>
@@ -111,8 +111,8 @@
             <label for="chocolate">шоколадные</label>
           </p>
           <p class="supplements-type">
-            <input type="checkbox" name="supplements" id="chocolate" checked>
-            <label for="chocolate">сахарные присыпки</label>
+            <input type="checkbox" name="supplements" id="sprinkles" checked>
+            <label for="sprinkles">сахарные присыпки</label>
           </p>
           <p class="supplements-type">
             <input type="checkbox" name="supplements" id="fruits">
@@ -148,7 +148,7 @@
           </li>
           <li class="product-item">
             <a href="#">
-            <h3 class="product-header"><Сливочно-кофейное с кусочками шоколада</h3>
+            <h3 class="product-header">Сливочно-кофейное с кусочками шоколада</h3>
               <p class="product-image">
                   <img src="img/coffee-cream.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
               </p>
@@ -292,6 +292,7 @@
       </ul>
 
     </section>
+    </main>
 
     <footer class="main-footer">
         <div class="social-links">
@@ -338,15 +339,12 @@
         </div>
     </footer>
 
-
-
-
       <section class="modal modal-chosen-item">
         <div class="chosen-item">
           <h3 class="product-header">Сливочно-клубничное с присыпкой из белого шоколада</h3>
           <img src="img/strawberry-cream.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
           <b>355 <span class="chosen-item-price">&#8381;</span><span class="product-price-value">/кг</span></b>
-          <input class="button "type="submit" name="view-button" value="Быстрый просмотр">
+          <input class="button" type="submit" name="view-button" value="Быстрый просмотр">
         </div>
       </section>
 
