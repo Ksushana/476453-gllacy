@@ -8,17 +8,42 @@
     <header>
       <nav>
         <a class="main-logo" href="index.html">
-          <img src="img/svg-gllacy/logo.svg" alt="Логотип" width="154" height="64">
+          <img src="img/svg-gllacy/logo.svg" alt="Gllacy Shop" width="154" height="64">
         </a>
         <ul class="site-navigation">
-          <li class="button"><a href="catalog.html">Каталог</a></li>
+          <li class="current"><a href="catalog.html">Каталог</a></li>
           <li><a href="delovery.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
           <li class="site-search"><a href="#">Поиск</a></li>
           <li class="login-link"><a href="#">Вход</a></li>
-          <li class="cart"><a href="#">2 товара</a></li>
+          <li class="cart">
+            <a href="#">2 товара</a>
+            <div class="modal modal-full-cart">
+              <h3 class="visually-hidden">Товары в корзине</h3>
+              <table>
+                <tr>
+                  <td><button type="button" name="remove_from_cart"></button></td>
+                  <td><img src="img/icecream-cart-1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button type="button" name="remove_from_cart"></button></td>
+                  <td><img src="img/icecream-cart-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span>300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              <p>Итого:<span>750 руб.</span></p>
+              <form class="button" action="https://echo.htmlacademy.ru" method="post">
+                <input type="submit" name="order-content" value="Оформить заказ">
+              </form>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="working-time-phone">
@@ -33,10 +58,12 @@
         <li><a href="#">Кагазин</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
+
       <h1>Сливочное мороженое</h1>
 
-    <section class="sort-datas">
-       <form class="catalog-sort" action="index.html" method="post">
+    <section class="filters">
+       <h2 class="visually-hidden">Фильтр товаров</h2>
+       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="sort-way">
           <legend>Сортировка:</legend>
           <select  name="sort">
@@ -44,8 +71,8 @@
           </select>
         </fieldset>
         <fieldset class="sort-price">
-
-          <input type="range" multiple min="0" step="1" max="10" data-values="1 9">
+          <legend>Цена: 100 руб. – 500 руб.</legend>
+          <input type="range" multiple min="100" step="10" max="500" data-values="100 500">
         </fieldset>
         <fieldset class="fat-range">
           <legend>Жирность:</legend>
@@ -97,7 +124,7 @@
             <label for="jam">джемы</label>
           </p>
         </fieldset>
-        <button type="submit">Применить</button>
+        <button type="submit" class="filter-button button">Применить</button>
       </form>
     </section>
 
@@ -230,27 +257,7 @@
         </ul>
       </section>
 
-      <section class="modal modal-full-cart">
-        <table>
-          <tr>
-            <td><button type="button" name="remove_from_cart"></button></td>
-            <td><img src="img/icecream-cart-1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х <span>200 руб.</span></td>
-            <td>300 руб.</td>
-          </tr>
-          <tr>
-            <td><button type="button" name="remove_from_cart"></button></td>
-            <td><img src="img/icecream-cart-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг х <span>300 руб.</span></td>
-            <td>450 руб.</td>
-          </tr>
-        </table>
-        <p>Итого:<span>750 руб.</span></p>
-        <a class="button" href="order.html">Оформить заказ</a>
 
-      </section>
 
       <section class="modal modal-chosen-item">
         <div class="chosen-item">
