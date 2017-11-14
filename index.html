@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <header>
@@ -11,12 +13,12 @@
           <img src="img/svg-gllacy/logo.svg" alt="Gllacy Shop" width="154" height="64">
         </a>
         <div class="site-navigation">
-          <ul>
+          <ul class="navigation-list">
             <li>
               <a href="catalog.html">Каталог</a>
-              <div classdropdown-block>
-                <ul class="modal-catalog">
-                  <li class="modal-catalog-new"><a href="latest.html">Новинки</a></li>
+              <div class="dropdown-block">
+                <ul class="dropdown-catalog">
+                  <li class="dropdown dropdown-catalog-new"><a href="latest.html">Новинки</a></li>
                   <li><a href="cream.html">Сливочное</a></li>
                   <li><a href="sherbets.html">Щербеты</a></li>
                   <li><a href="popsicles.html">Фруктовый лед</a></li>
@@ -32,9 +34,9 @@
           <li class="site-search">
             <div class="site-search-block">
               <a href="#">Поиск</a>
-              <div class="modal modal-search">
+              <div class="visually-hidden-temp dropdown dropdown-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
-                  <input type="search" name="search" placeholder="Что ищем?">
+                  <input class="search-input" type="search" name="search" placeholder="Что ищем?">
                 </form>
               </div>
             </div>
@@ -52,8 +54,8 @@
                   <label class="visually-hidden" for="user-password">Пароль</label>
                   <input class="login-password" type="text" placeholder="Пароль" name="password" id="user-password">
                 </p>
+                <button class="button" type="submit">Войти</button>
               </form>
-              <button class="button" type="submit">Войти</button>
               <ul class="login-help">
                 <li><a class="restore" href="#">Забыли пароль?</a></li>
                 <li><a class="register" href="#">Новая регистрация</a></li>
@@ -68,7 +70,7 @@
       </nav>
       <div class="working-time-phone">
         <p>С 10 до 20, ежедневно</p>
-        <b>8 812 450-25-25</b>
+        <a href="+78124502525">8 812 450-25-25</a>
       </div>
     </header>
 
@@ -215,7 +217,7 @@
           <br>
           <br>
           <p>Для заказов по телефону:</p>
-          <b>8 812 450-25-25</b>
+          <a href="+78124502525">8 812 450-25-25</a>
           <p>(с 10 до 20 ежедневно)</p>
           <a href="feedback-gllacy.html" class="buttom">Форма обратной связи</a>
         </div>
