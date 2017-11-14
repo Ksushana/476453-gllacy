@@ -36,7 +36,7 @@
               <a href="#">Поиск</a>
               <div class="visually-hidden-temp dropdown dropdown-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
-                  <input class="search-input" type="search" name="search" placeholder="Что ищем?">
+                  <input class="input-block search-input" type="search" name="search" placeholder="Что ищем?">
                   <button type="submit" class="visually-hidden">
                 </form>
               </div>
@@ -49,11 +49,11 @@
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label class="visually-hidden" for="user-login">Логин</label>
-                  <input class="login-email" type="email" placeholder="Электронная почта" name="login" id="user-login">
+                  <input class="input-block login-email" type="email" placeholder="Электронная почта" name="login" id="user-login">
                 </p>
                 <p>
                   <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input class="login-password" type="text" placeholder="Пароль" name="password" id="user-password">
+                  <input class="input-block login-password" type="text" placeholder="Пароль" name="password" id="user-password">
                 </p>
                 <button class="button" type="submit">Войти</button>
               </form>
@@ -99,19 +99,19 @@
           <div class="slider-inner">
             <div class="slider-1">
               <img src="img/slider-1.png" alt="Мороженое крем-брюле и пломбир с малиновым джемом" width="1079" height="854">
-              <h2 class="slider-header">Крем-брюле и пломбир с малиновым джемом</h2>
+              <h2 class="slider-header">Крем-брюле и пломбир <br> с малиновым джемом</h2>
             </div>
             <div class="slider-2">
               <img src="img/slider-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1079" height="854">
-              <h2 class="slider-header">Шоколадный пломбир и лимонный сорбет</h2>
+              <h2 class="slider-header">Шоколадный пломбир <br> и лимонный сорбет</h2>
             </div>
             <div class="slider-3">
               <img src="img/slider-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
-              <h2 class="slider-header">Пломбир с помадкой и клубничный щербет</h2>
+              <h2 class="slider-header">Пломбир с помадкой <br> и клубничный щербет</h2>
             </div>
           </div>
         </div>
-        <a href="#" class="button">Давайте оба!</a>
+        <a href="#" class="button big-button">Давайте оба!</a>
       </section>
 
       <section class="offers">
@@ -198,20 +198,22 @@
       </article>
 
       <section class="subscribe">
-        <h2 class="visually-hidden">Подписка на наши обновления</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="subscrine-form" class="visually-hidden">Электронная почта</label>
-            <input id="subscrine-form" type="text" name="e-mail" placeholder="Электронная почта">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
+        <div class="subscribe-inner">
+          <h2 class="visually-hidden">Подписка на наши обновления</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="subscrine-form" class="visually-hidden">Электронная почта</label>
+              <input id="subscrine-form" type="text" name="e-mail" placeholder="Электронная почта" class="input-block">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-full.jpg" alt="Карта, как добраться до магазина">
+        <img src="img/map-full.jpg" alt="Карта, как добраться до магазина" width="1200" height="640">
         <div class="address-block">
           <p>Адрес главного офиса и офлайн-магазина:</p>
           <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -247,7 +249,7 @@
 
         <div class="additional-info">
           <h3 class="visually-hidden">Дополнительная информация о нашем магазине</h3>
-          <ul class="additiona-info-list">
+          <ul class="additional-info-list">
             <li>
               <a href="#">Для поставщиков</a>
             </li>
