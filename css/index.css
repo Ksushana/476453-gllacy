@@ -424,3 +424,50 @@ a {
   line-height: 18px;
   font-weight: bold;
 }
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.pagination-current a,
+.pagination-item a:active {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover {
+  background-color: #9db1a5;
+}
+
+.filters {
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.filter legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter-button {
+  background-color: #9cb0a4;
+  border: 2px solid #fbfcfb;
+  background-image: none;
+}
+
+.filter-button:hover,
+.filter-button:active /*временно*/ {
+  color: #323232;
+  background-color: #fbfcfb;
+  background-image: none;
+}
