@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -71,30 +71,30 @@
        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="sort-way">
           <legend>Сортировка:</legend>
-          <select  name="sort">
-           <option value="popularuty">по популярности</option>
-           <!--<option value="cheap">сначала недорогие</option>
-           <option value="expensive">сначала дорогие</option>
-           <option value="fat-range">по жирности</option>-->
-          </select>
-          <ul class="sort-way-popup visually-hidden">
-            <li>по популярности</li>
-            <li>сначала недорогие</li>
-            <li>сначала недорогие</li>
-            <li>по жирности</li>
-          </ul>
+           <p class="slct">по популярности</p>
+           <ul class="sort-way-popup visually-hidden-temp">
+             <li>по популярности</li>
+             <li>сначала недорогие</li>
+             <li>сначала недорогие</li>
+             <li>по жирности</li>
+           </ul>
+         </div>
         </fieldset>
         <fieldset class="sort-price">
           <legend>Цена: 100 руб. – 500 руб.</legend>
-          <div class="range-block">
-            <div class="range-line"></div>
-            <div class="range-value1"></div>
-            <div class="range-value2"></div>
-          </div>
+           <div class="range-block">
+             <div class="range-line-block filter-input">
+              <div class="range-line"></div>
+             </div>
+             <div class="range-handles-block">
+              <div class="range-value1"></div>
+              <div class="range-value2"></div>
+             </div>
+           </div>
         </fieldset>
         <fieldset class="fat-range">
           <legend>Жирность:</legend>
-
+           <div  class="filter-input">
             <p class="radio-fat">
               <label>
                 <input type="radio" name="fat" value="0" tabindex="0">
@@ -119,9 +119,11 @@
                 выше 30%
               </label>
             </p>
+          </div>
         </fieldset>
         <fieldset class="supplements">
           <legend>Наполнители:</legend>
+          <div  class="filter-input">
           <p class="supplements-type">
             <input type="checkbox" name="supplements" id="chocolate" checked>
             <label for="chocolate">шоколадные</label>
@@ -142,6 +144,7 @@
             <input type="checkbox" name="supplements" id="jam">
             <label for="jam">джемы</label>
           </p>
+        </div>
         </fieldset>
         <button type="submit" class="filter-button button">Применить</button>
       </form>
@@ -481,7 +484,7 @@
         </div>
 
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/svg-gllacy/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">
           </a>
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
