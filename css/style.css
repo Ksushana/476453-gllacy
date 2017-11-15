@@ -312,6 +312,10 @@ a {
   border-radius: 10px;
 }
 
+.blog-header {
+  font-weight: 500;
+}
+
 .blog a {
   font-size: 24px;
   line-height: 30px;
@@ -610,4 +614,18 @@ a {
 
 .range-value1:hover {
   /*подумать*/
+}
+
+.feedback-block {
+  background-color: #f8f7f4;
+}
+.feedback-form ul {
+  list-style: none;
+}
+
+.feedback h1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+
 }
