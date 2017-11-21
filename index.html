@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-logo">
+
+     <header class="main-header container">
+        <nav class="main-navigation">
+         <a class="main-logo">
           <img src="img/svg-gllacy/logo.svg" alt="Gllacy Shop" width="154" height="64">
-        </a>
-        <div class="site-navigation">
+         </a>
+         <div class="site-navigation">
           <ul class="navigation-list">
             <li>
               <a href="catalog.html">Каталог</a>
-              <div class="dropdown-block dropdown-block-catalog">
+              <div class="dropdown-block dropdown-block-catalog visually-hidden">
                 <ul class="dropdown-catalog">
                   <li class="dropdown dropdown-catalog-new"><a href="latest.html">Новинки</a></li>
                   <li><a href="cream.html">Сливочное</a></li>
@@ -35,10 +36,10 @@
           <li class="site-search">
             <div class="site-search-block">
               <a href="#">Поиск</a>
-              <div class="visually-hidden-temp dropdown dropdown-search">
+              <div class="visually-hidden dropdown dropdown-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
                   <input class="input-block search-input" type="search" name="search" placeholder="Что ищем?">
-                  <button type="submit" class="visually-hidden">
+                  <button type="submit" class="visually-hidden"></button>
                 </form>
               </div>
             </div>
@@ -46,7 +47,7 @@
           <li class="user-login">
            <div class="user-login-block">
             <a href="#">Вход</a>
-            <div class="modal modal-login">
+            <div class="modal modal-login visually-hidden">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label class="visually-hidden" for="user-login">Логин</label>
@@ -74,9 +75,11 @@
         <p>С 10 до 20, ежедневно</p>
         <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
+
     </header>
 
     <main class="main-container">
+      <div class="container">
       <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
       <section>
         <div class="slider">
@@ -136,9 +139,7 @@
           <li class="product-item">
             <a href="#">
               <h3 class="product-header">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              <p class="product-image">
-                <img src="img/orange-cream.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-              </p>
+              <img src="img/orange-cream.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"  class="product-image">
             </a>
             <b>
               <span class="product-price-value">310 &#8381;</span>
@@ -147,10 +148,8 @@
           </li>
           <li class="product-item">
             <a href="#">
-            <h3 class="product-header">Сливочно-кофейное с кусочками шоколада</h3>
-              <p class="product-image">
-                  <img src="img/coffee-cream.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
-              </p>
+              <h3 class="product-header">Сливочно-кофейное с кусочками шоколада</h3>
+              <img src="img/coffee-cream.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267" class="product-image">
             </a>
             <b>
               <span class="product-price-value">380 &#8381;</span>
@@ -160,9 +159,7 @@
           <li class="product-item">
             <a href="#">
               <h3 class="product-header">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              <p class="product-image">
-                <img src="img/strawberry-cream.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
-              </p>
+              <img src="img/strawberry-cream.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267" class="product-image">
             </a>
             <b>
               <span class="product-price-value">355 &#8381;</span>
@@ -172,9 +169,7 @@
           <li class="product-item">
             <a href="#">
               <h3 class="product-header">Сливочное крем-брюле с карамельной подливкой</h3>
-              <p class="product-image">
-                <img src="img/creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267">
-              </p>
+              <img src="img/creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267" class="product-image">
             </a>
             <b>
               <span class="product-price-value">415 &#8381;</span>
@@ -187,10 +182,12 @@
 
       <article class="shop-discription">
         <h2 class="discription-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="discription-items">
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
       </article>
 
       <article class="blog">
@@ -226,10 +223,12 @@
           <a href="feedback-gllacy.html" class="button">Форма обратной связи</a>
         </div>
       </section>
+    </div>
     </main>
 
 
     <footer class="main-footer">
+      <div class="container">
         <div class="social-links">
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="social-links-list">
@@ -272,6 +271,7 @@
           </a>
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
+      </div>
     </footer>
   </body>
 </html>
