@@ -71,10 +71,7 @@ background-color: pink ;
   border: none;
 }
 
-.slider-button {
-  font-size: 32px;
-  line-height: 44px;
-}
+
 
 .button:hover {
   background-color: #f07963;
@@ -250,7 +247,7 @@ log a:focus {
   width: 560px;
   background-color: #ab0005;
   background-image: url("../img/raspberry-background.jpg");
-  background-position: 0 0;
+  background-position: -50px -90px;
   background-repeat: no-repeat;
 }
 
@@ -258,7 +255,7 @@ log a:focus {
   width: 560px;
   background-color: #5c3425;
   background-image: url("../img/chocolate-background.jpg");
-  background-position: 0 0;
+  background-position: -218px -105px;
   background-repeat: no-repeat;
 }
 
@@ -337,6 +334,7 @@ log a:focus {
   line-height: 30px;
   color: #323232;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .blog a:hover {
@@ -372,6 +370,20 @@ log a:focus {
   width: 1200px;
   height: 428px;
   overflow: hidden;
+  image-orientation: 100px 100px;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 140px;
+  background-color: transparent;
+  background-image: url("../img/svg-gllacy/pin.svg");
+  background-position: no-repeat;
+  top: 139px;
+  left: 307px;
+  z-index: 10
 }
 
 
@@ -725,8 +737,8 @@ log a:focus {
 .raspberry p,
 .chocolate p{
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-bottom: 43px;
 }
 
 .raspberry a,
@@ -753,6 +765,7 @@ log a:focus {
 }
 .product-item {
   position: relative;
+  margin-bottom: 40px;
 }
 .product-item a {
   display: flex;
@@ -763,7 +776,11 @@ log a:focus {
   position: absolute;
   bottom: 70px;
 }
-.product-item::before {
+
+.product-item-top {
+  margin-bottom: 0px;
+}
+ .product-item-top::before {
   content: "";
   position: absolute;
   width: 61px;
@@ -771,7 +788,6 @@ log a:focus {
   border-radius: 50%;
   background-color: white;
   background-image: url("../img/svg-gllacy/hit.svg");
-
 }
 
 .shop-discription {
@@ -934,12 +950,25 @@ display: block;
 .main-footer .container {
   display: flex;
 }
-.footer-link {
+
+.slider-button {
+  font-size: 32px;
+  line-height: 44px;
+  align-self: center;
+}
+
+.slider-1,
+.slider-2.
+.slider-3 {
+  display: flex;
+
 }
 
 .slider-1 {
   position: relative;
   min-height: 490px;
+    display: flex;
+  flex-direction: column;
 }
 
 .slider-1 img {
