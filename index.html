@@ -105,11 +105,11 @@
               <img src="img/slider-1.png" alt="Мороженое крем-брюле и пломбир с малиновым джемом" width="1079" height="854">
               <h2 class="slider-header">Крем-брюле и пломбир <br> с малиновым джемом</h2>
             </div>
-            <div class="slider-2">
+            <div class="slider-2 visually-hidden">
               <img src="img/slider-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1079" height="854">
               <h2 class="slider-header">Шоколадный пломбир <br> и лимонный сорбет</h2>
             </div>
-            <div class="slider-3">
+            <div class="slider-3 visually-hidden">
               <img src="img/slider-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
               <h2 class="slider-header">Пломбир с помадкой <br> и клубничный щербет</h2>
             </div>
@@ -190,13 +190,14 @@
         </div>
       </article>
 
-      <article class="blog">
-        <h2 class="blog-header">Новое в нашем блоге</h2>
-        <a href="blog.html" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
-      </article>
+      <div class="info-wrapper">
+        <article class="blog">
+         <h2 class="blog-header">Новое в нашем блоге</h2>
+         <a href="blog.html" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
 
-      <section class="subscribe">
-        <div class="subscribe-inner">
+        <section class="subscribe">
+         <div class="subscribe-inner">
           <h2 class="visually-hidden">Подписка на наши обновления</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -206,8 +207,10 @@
             </p>
             <button class="button" type="submit">Отправить</button>
           </form>
-        </div>
-      </section>
+         </div>
+        </section>
+      </div>
+
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -249,13 +252,16 @@
 
         <div class="additional-info">
           <h3 class="visually-hidden">Дополнительная информация о нашем магазине</h3>
-          <ul class="additional-info-list">
+          <div class="additional-info-list">
+            <ul>
             <li>
               <a href="#">Для поставщиков</a>
             </li>
             <li>
               <a href="#">О производстве</a>
             </li>
+          </ul>
+          <ul>
             <li>
               <a href="#">Наши документы</a>
             </li>
@@ -263,6 +269,7 @@
               <a href="#">Экологические стандарты</a>
             </li>
           </ul>
+          </div>
         </div>
 
         <div class="footer-copyright">

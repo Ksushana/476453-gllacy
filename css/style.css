@@ -375,8 +375,8 @@ log a:focus {
   bottom: 61px;
   right: 26px;
 
-  width: 302px;
-  height: 305px;
+  width: 258px;
+  min-height: 245px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
 }
@@ -837,4 +837,91 @@ log a:focus {
 .subscribe-form button,
 .subscribe-form  {
 height: 45px;
+}
+
+
+
+
+.address-block {
+  padding: 30px 22px;
+}
+
+.address-block p{
+  margin: 0;
+}
+.address-block .button{
+  height: 45px;
+}
+
+
+.main-footer {
+  padding-top: 18px;
+  padding-bottom: 28px;
+}
+.social-links-list,
+.additional-info-list{
+  display: flex;
+  margin: 0;
+  padding-top: 17px;
+}
+.additional-info-list {
+  display: flex;
+}
+
+.additional-info-list ul:first-child {
+  width: 138px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.additional-info-list ul:last-child {
+  width: 170px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
+}
+
+.social-links {
+  width: 186px;
+  margin-right: 210px;
+}
+
+.additional-info {
+  width: 350px;
+}
+
+.footer-copyright {
+  width: 205px;
+  margin-left: auto;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+
+.slider-1 {
+  position: relative;
+  min-height: 490px;
+  z-index: -5;
+}
+
+.slider-1 img {
+  position: absolute;
+  top: -150px;
+  left: 35px;
+}
+
+.slider-1 h2 {
+  position: absolute;
+  bottom: -10px;
+  left: 255px;
+}
+.slides-switches {
+  position: absolute;
+}
+.slider-button {
+  position: absolute;
+  height: 64px;
+  width: 279px;
 }
