@@ -34,12 +34,11 @@ a, img, input, button, span {
 }
 
 .container {
-/*max-width: 1146px;*/
 padding-left: 27px;
 padding-right: 27px;
 margin: 0 auto;
 width: 1200px;
-background-color: pnk ;
+background-color: pink ;
 }
 
 .visually-hidden {
@@ -731,32 +730,7 @@ display: block;
   font-weight: bold;
 }
 
-.pagination-list {
-  list-style: none;
-  display: flex;
-}
 
-.pagination-list .disabled {
-  opacity: 0.5;
-}
-
-
-
-.pagination-list a {
-  color: #ffffff;
-  line-height: 18px;
-
-}
-
-.pagination-current a,
-.pagination-item a:active {
-  color: #323232;
-  background-color: #ffffff;
-}
-
-.pagination-item a:hover {
-  background-color: #9db1a5;
-}
 
 .filters {
   line-height: 18px;
@@ -1006,8 +980,44 @@ input[type=checkbox]{
   line-height: 28px;
   font-weight: 500;
 }
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
 
+.pagination-list .disabled {
+  opacity: 0.5;
+}
+
+
+
+.pagination-list a {
+  color: #ffffff;
+  line-height: 18px;
+
+}
+
+.pagination-current a,
+.pagination-item a:active {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover {
+  background-color: #9db1a5;
+}
 .pagination-list {
   display: flex;
   justify-content: flex-end;
+}
+.pagination-item a{
+  width: 26px;
+  height: 25px;
+  text-align: center;
+  padding-top: 4px;
+  border-radius: 50%;
+}
+
+.pagination-list .prev {
+  display: ;
 }
