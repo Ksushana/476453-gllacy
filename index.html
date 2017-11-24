@@ -16,27 +16,27 @@
          </a>
          <div class="site-navigation">
           <ul class="navigation-list">
-            <li>
-              <a href="catalog.html">Каталог</a>
-              <div class="dropdown-block dropdown-block-catalog visually-hidden">
-                <ul class="dropdown-catalog">
-                  <li class="dropdown dropdown-catalog-new"><a href="latest.html">Новинки</a></li>
-                  <li><a href="cream.html">Сливочное</a></li>
-                  <li><a href="sherbets.html">Щербеты</a></li>
-                  <li><a href="popsicles.html">Фруктовый лед</a></li>
-                  <li><a href="mellorine.html">Мелорин</a></li>
+            <div class="wrap-inner">
+              <li  class="catalog-link">
+                <a class="inner-link" href="catalog.html">Каталог</a>
+                <ul class="dropdown-catalog dropdown-block dropdown-block-catalog">
+                  <li class="dropdown dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
+                  <li><a class="dropdown-catalog-link" href="cream.html">Сливочное</a></li>
+                  <li><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
+                  <li><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
+                  <li><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
                 </ul>
-              </div>
-            </li>
-            <li><a href="delovery.html">Доставка и оплата</a></li>
+              </li>
+              <li><a href="delovery.html">Доставка и оплата</a></li>
             <li><a href="about.html">О Компании</a></li>
+          </div>
           </ul>
         </div>
         <ul class="user-navigation">
           <li class="site-search">
             <div class="site-search-block">
               <a href="#">Поиск</a>
-              <div class="visually-hidden dropdown dropdown-search">
+              <div class="dropdown dropdown-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
                   <input class="input-block search-input" type="search" name="search" placeholder="Что ищем?">
                   <button type="submit" class="visually-hidden"></button>
@@ -47,7 +47,7 @@
           <li class="user-login">
            <div class="user-login-block">
             <a href="#">Вход</a>
-            <div class="modal modal-login visually-hidden">
+            <div class="dropdown dropdown-login">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label class="visually-hidden" for="user-login">Логин</label>
@@ -101,24 +101,25 @@
             </li>
           </ul>
           <div class="slider-inner">
-            <div class="slider-1">
+            <div class="slider-slides">
+             <div class="slider-1">
               <img src="img/slider-1.png" alt="Мороженое крем-брюле и пломбир с малиновым джемом" width="1079" height="854">
               <h2 class="slider-header">Крем-брюле и пломбир <br> с малиновым джемом</h2>
               <a href="#" class="button slider-button">Давайте оба!</a>
-            </div>
-            <div class="slider-2 visually-hidden">
+             </div>
+             <div class="slider-2">
               <img src="img/slider-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1079" height="854">
               <h2 class="slider-header">Шоколадный пломбир <br> и лимонный сорбет</h2>
               <a href="#" class="button slider-button">Давайте оба!</a>
-            </div>
-            <div class="slider-3 visually-hidden">
+             </div>
+             <div class="slider-3">
               <img src="img/slider-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
               <h2 class="slider-header">Пломбир с помадкой <br> и клубничный щербет</h2>
               <a href="#" class="button slider-button">Давайте оба!</a>
+             </div>
             </div>
           </div>
-        </div>
-
+       </div>
       </section>
 
       <section class="offers">
@@ -239,8 +240,8 @@
         <div class="social-links">
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="social-links-list">
-            <li>
-              <a  class="social-button social-button-tw" href="twitter.com/gllacyshop">twitter</a>
+            <li class="social-button social-button-tw">
+              <a href="twitter.com/gllacyshop">twitter</a>
             </li>
             <li>
               <a class="social-button social-button-inst" href="instagram.com/gllacyshop">instagram</a>
