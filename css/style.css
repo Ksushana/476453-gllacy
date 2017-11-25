@@ -231,13 +231,11 @@ background-color:pnk;
 
 .user-navigation{
   justify-content: space-between;
-  width: 280px;
+  width: 300px;
   margin-left: auto;
 }
 
 .user-navigation li {
-  /*margin-left: 10px;*/
-  margin-right: 10px;
   margin-bottom: auto;
 }
 .user-navigation a {
@@ -346,6 +344,20 @@ background-color:pnk;
 .cart:hover .modal-full-cart{
   visibility: visible;
 }
+.cart .full-cart {
+  position: relative;
+}
+.cart .full-cart::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/svg-gllacy/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position:  0 0;
+  left: 15px;
+  top: 6px;
+}
 .modal-full-cart {
   width: 540px;
   background-color: #f8f7f4;
@@ -355,7 +367,7 @@ background-color:pnk;
 
   visibility: hidden;
   position: absolute;
-  top: 35px;
+  top: 75px;
   right: 0;
 }
 
