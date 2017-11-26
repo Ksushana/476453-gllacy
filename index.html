@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+     <div class="page-wrapper">
      <header class="main-header container">
         <nav class="main-navigation">
          <a class="main-logo">
@@ -16,26 +16,29 @@
          </a>
          <div class="site-navigation">
           <ul class="navigation-list">
-            <div class="wrap-inner">
               <li  class="catalog-link">
-                <a class="inner-link" href="catalog.html">Каталог</a>
-                <ul class="dropdown-catalog dropdown-block dropdown-block-catalog">
+                <div class="wrap-item"><a class="inner-link" href="catalog.html"><span>Каталог</span></a><div>
+                <div class="wrap-inner">
+                 <ul class="dropdown-catalog dropdown-block dropdown-block-catalog">
                   <li class="dropdown dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
                   <li><a class="dropdown-catalog-link" href="cream.html">Сливочное</a></li>
                   <li><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
                   <li><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
                   <li><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
                 </ul>
+              </div>
               </li>
-              <li><a href="delovery.html">Доставка и оплата</a></li>
-              <li><a href="about.html">О Компании</a></li>
-          </div>
+
+
+              <li><a href="delovery.html"><span>Доставка и оплата</span></a></li>
+              <li><a href="about.html"><span>О Компании</span></a></li>
+
           </ul>
         </div>
         <ul class="user-navigation">
           <li class="site-search">
             <div class="site-search-block">
-              <a href="#">Поиск</a>
+              <div class="wrap-item"><a href="#">Поиск</a></div>
               <div class="dropdown dropdown-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
                   <input class="input-block search-input" type="search" name="search" placeholder="Что ищем?">
@@ -44,9 +47,10 @@
               </div>
             </div>
           </li>
+
           <li class="user-login">
            <div class="user-login-block">
-            <a href="#">Вход</a>
+            <div class="wrap-item"><a class="entrance"href="#">Вход</a></div>
             <div class="dropdown dropdown-login">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
@@ -57,12 +61,14 @@
                   <label class="visually-hidden" for="user-password">Пароль</label>
                   <input class="input-block login-password" type="text" placeholder="Пароль" name="password" id="user-password">
                 </p>
+                <div class="login-button-help">
                 <button class="button" type="submit">Войти</button>
               </form>
               <ul class="login-help">
-                <li><a class="restore" href="#">Забыли пароль?</a></li>
-                <li><a class="register" href="#">Новая регистрация</a></li>
+                <li><a class="help-link" href="#">Забыли пароль?</a></li>
+                <li><a class="help-link" href="#">Новая регистрация</a></li>
               </ul>
+            </div>
             </div>
           </div>
           </li>
@@ -85,35 +91,40 @@
         <div class="slider">
           <ul class="slides-switches">
             <li class="slide-radio">
-              <button class="slide-btn">
+              <button class="slide-btn" id="btn-1" checked>
                 Первый слайд
               </button>
             </li>
             <li class="slide-radio">
-              <button class="slide-btn">
+              <button class="slide-btn" id="btn-2">
                 Второй слайд
               </button>
             </li>
             <li class="slide-radio">
-              <button class="slide-btn">
+              <button class="slide-btn" id="btn-3">
                 Третий слайд
               </button>
             </li>
           </ul>
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
           <div class="slider-inner">
             <div class="slider-slides">
-             <div class="slider-1">
-              <img src="img/slider-1.png" alt="Мороженое крем-брюле и пломбир с малиновым джемом" width="1079" height="854">
+             <div class="slider-1 slider-slide">
+              <!-- <img src="img/slider-1.png" alt="Мороженое крем-брюле и пломбир с малиновым джемом" width="1079" height="854"> -->
               <h2 class="slider-header">Крем-брюле и пломбир <br> с малиновым джемом</h2>
               <a href="#" class="button slider-button">Давайте оба!</a>
              </div>
-             <div class="slider-2">
-              <img src="img/slider-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1079" height="854">
+             <div class="slider-2 slider-slide">
+              <!-- <img src="img/slider-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1079" height="854"> -->
               <h2 class="slider-header">Шоколадный пломбир <br> и лимонный сорбет</h2>
               <a href="#" class="button slider-button">Давайте оба!</a>
              </div>
-             <div class="slider-3">
-              <img src="img/slider-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
+             <div class="slider-3 slider-slide">
+              <!-- <img src="img/slider-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854"> -->
               <h2 class="slider-header">Пломбир с помадкой <br> и клубничный щербет</h2>
               <a href="#" class="button slider-button">Давайте оба!</a>
              </div>
@@ -142,7 +153,7 @@
         <ul class="products-list">
           <li class="product-item product-item-top">
             <a href="#">
-              <h3 class="product-header">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <h3 class="product-header"><span>Сливочное с апельсиновым</span><span> джемом и цитрусовой стружкой</span></h3>
               <img src="img/orange-cream.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"  class="product-image">
             </a>
             <b>
@@ -152,7 +163,7 @@
           </li>
           <li class="product-item product-item-top">
             <a href="#">
-              <h3 class="product-header">Сливочно-кофейное с кусочками шоколада</h3>
+              <h3 class="product-header"><span>Сливочно-кофейное с кусочками</span><span> шоколада</span></h3>
               <img src="img/coffee-cream.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267" class="product-image">
             </a>
             <b>
@@ -162,7 +173,7 @@
           </li>
           <li class="product-item product-item-top">
             <a href="#">
-              <h3 class="product-header">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <h3 class="product-header"><span>Сливочно-клубничное с</span><span> присыпкой из белого шоколада</span></h3>
               <img src="img/strawberry-cream.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267" class="product-image">
             </a>
             <b>
@@ -172,7 +183,7 @@
           </li>
           <li class="product-item product-item-top">
             <a href="#">
-              <h3 class="product-header">Сливочное крем-брюле с карамельной подливкой</h3>
+              <h3 class="product-header"><span>Сливочное крем-брюле с</span><span> карамельной подливкой</span></h3>
               <img src="img/creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267" class="product-image">
             </a>
             <b>
@@ -218,8 +229,9 @@
     </div>
 
       <section class="map">
+        <div class="map-container">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-full.jpg" alt="Карта, как добраться до магазина" width="1200" height="640">
+        <img src="img/map-full.jpg" alt="Карта, как добраться до магазина" width="1200" height="640" class="visually-hidden">
         <div class="address-block">
           <p>Адрес главного офиса<br> и офлайн-магазина:</p>
           <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -230,6 +242,7 @@
           <p>(с 10 до 20 ежедневно)</p>
           <a href="feedback-gllacy.html" class="button">Форма обратной связи</a>
         </div>
+      </div>
       </section>
 
     </main>
@@ -285,5 +298,6 @@
         </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>
