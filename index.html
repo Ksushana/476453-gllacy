@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-     <div class="page-wrapper">
+    <input type="radio" name="slider" value="1" class="slide-btn" id="btn-1" checked>
+
+    <input type="radio" name="slider" value="2" class="slide-btn" id="btn-2">
+
+    <input type="radio" name="slider" value="3" class="slide-btn" id="btn-3">
+
+    <div class="page-wrapper">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+     <!-- <div class="page-wrapper"> -->
      <header class="main-header container">
         <nav class="main-navigation">
          <a class="main-logo">
@@ -16,22 +28,23 @@
          </a>
          <div class="site-navigation">
           <ul class="navigation-list">
+            <div class="wrap-item">
               <li  class="catalog-link">
-                <div class="wrap-item"><a class="inner-link" href="catalog.html"><span>Каталог</span></a><div>
-                <div class="wrap-inner">
-                 <ul class="dropdown-catalog dropdown-block dropdown-block-catalog">
+                <a class="inner-link" href="catalog.html">Каталог</a>
+               </li>
+                 <ul class="dropdown-catalog">
                   <li class="dropdown dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
-                  <li><a class="dropdown-catalog-link" href="cream.html">Сливочное</a></li>
+                  <li><a class="dropdown-catalog-link" href="catalog.html">Сливочное</a></li>
                   <li><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
                   <li><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
                   <li><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
                 </ul>
-              </div>
-              </li>
+            </div>
+
 
 
               <li><a href="delovery.html"><span>Доставка и оплата</span></a></li>
-              <li><a href="about.html"><span>О Компании</span></a></li>
+              <li><a href="about.html"><span>О Компании</a></li>
 
           </ul>
         </div>
@@ -89,28 +102,7 @@
       <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
       <section>
         <div class="slider">
-          <ul class="slides-switches">
-            <li class="slide-radio">
-              <button class="slide-btn" id="btn-1" checked>
-                Первый слайд
-              </button>
-            </li>
-            <li class="slide-radio">
-              <button class="slide-btn" id="btn-2">
-                Второй слайд
-              </button>
-            </li>
-            <li class="slide-radio">
-              <button class="slide-btn" id="btn-3">
-                Третий слайд
-              </button>
-            </li>
-          </ul>
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-          </div>
+
           <div class="slider-inner">
             <div class="slider-slides">
              <div class="slider-1 slider-slide">
