@@ -105,14 +105,12 @@
        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="sort-way">
           <legend>Сортировка:</legend>
-           <p class="slct">по популярности</p>
-           <ul class="sort-way-popup visually-hidden">
-             <li>по популярности</li>
-             <li>сначала недорогие</li>
-             <li>сначала недорогие</li>
-             <li>по жирности</li>
-           </ul>
-         </div>
+          <select class="slct">
+             <option>по популярности</option>
+             <option>сначала недорогие</option>
+             <option>сначала недорогие</option>
+             <option>по жирности</option>
+           </select>
         </fieldset>
         <fieldset class="sort-price">
           <legend>Цена: 100 руб. – 500 руб.</legend>
@@ -128,28 +126,20 @@
           <legend>Жирность:</legend>
            <div  class="filter-input">
             <p class="radio-fat">
-              <label>
-                <input type="radio" name="fat" value="0" tabindex="0">
-                0%
-              </label>
+              <input type="radio" name="fat" value="0" tabindex="0" id="0%">
+              <label for="0%">0%</label>
             </p>
             <p class="radio-fat">
-              <label>
-                <input type="radio" name="fat" value="10" tabindex="0">
-                до 10%
-              </label>
+              <input type="radio" name="fat" value="10" tabindex="0" id="10%">
+              <label for="10%">до 10%</label>
             </p>
             <p class="radio-fat">
-              <label>
-                <input type="radio" name="fat" value="30" tabindex="0">
-                до 30%
-              </label>
+              <input class="radio-input" type="radio" name="fat" value="30" tabindex="0" id="30%">
+              <label for="30%">до 30%</label>
             </p>
             <p class="radio-fat">
-              <label>
-                <input type="radio" name="fat" value="+30" tabindex="0">
-                выше 30%
-              </label>
+              <input type="radio" name="fat" value="+30" tabindex="0" id="+30%">
+              <label for="+30%">выше 30%</label>
             </p>
           </div>
         </fieldset>
