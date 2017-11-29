@@ -231,7 +231,7 @@ input {
  .user-login,
  .cart {
 	position: relative;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 .dropdown-catalog {
@@ -246,7 +246,7 @@ input {
 	padding: 0;
   /*padding-left: 21px;*/
 	z-index: 200;
-	padding-top: 8px;
+	padding-top: 4px;
 	border-radius: 5px;
 	list-style: none;
 	display: flex;
@@ -294,7 +294,7 @@ input {
 .dropdown-catalog::after {
 	content: "";
 	position: absolute;
-	top: 36px;
+	top: 35px;
 	left: 7px;
 	width: 128px;
 	margin: 0 auto;
@@ -309,6 +309,7 @@ input {
 }
 .dropdown-catalog-new {
   margin-bottom: 5px;
+  padding-top: 3px;
 }
 .dropdown-catalog-new a {
 	font-weight: 700;
@@ -1763,18 +1764,41 @@ input[type=checkbox] {
 
 .feedback-block {
 	background-color: #f8f7f4;
+  width: 477px;
+  min-height: 442px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback-form ul {
 	list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.feedback-form li {
+  margin-bottom: 20px;
+  font-family: inherit;
 }
 
-.feedback h1 {
+.feedback-form .input-block {
+  padding-left: 14px;
+}
+.feedback-block h1 {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 18px;
 }
-
+.feedback-block textarea {
+  height: 153px;
+  width: 426px;
+}
+.feedback-form .button {
+margin-left: auto;
+}
 /*Пагинатор*/
 
 .pagination-list {
