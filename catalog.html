@@ -19,7 +19,7 @@
               <a class="current inner-link" href="catalog.html">Каталог</a>
               <ul class="dropdown-catalog">
                 <li class="dropdown dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
-                <li class="current-dropdown-link"><a class="dropdown-catalog-link" >Сливочное</a></li>
+                <li class="current-dropdown-link">Сливочное</li>
                 <li><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
                 <li><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
                 <li><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
@@ -30,40 +30,39 @@
           </ul>
         </div>
         <ul class="user-navigation">
-          <li class="site-search site-search-block">
-            <!-- <div class=""> -->
-              <div class="wrap-item"><a href="#">Поиск</a></div>
-              <div class="dropdown dropdown-search">
-                <form action="https://echo.htmlacademy.ru" method="get">
-                  <input class="input-block search-input" type="search" name="search" placeholder="Что ищем?">
-                  <button type="submit" class="visually-hidden"></button>
-                </form>
-              </div>
-            <!-- </div> -->
+          <li class="site-search">
+               <div class="site-search-block">
+               <a class="search-link" href="#">Поиск</a>
+               <div class="dropdown dropdown-search">
+                 <form action="https://echo.htmlacademy.ru" method="get">
+                   <input class="input-block search-input" type="search" name="search" placeholder="Что ищем?">
+                   <button type="submit" class="visually-hidden"></button>
+                 </form>
+               </div>
+             </div>
+
           </li>
-          <li class="user-login-block">
-            <!-- <div class="user-login-block"> -->
-              <div class="wrap-item"><a class="entrance" href="#">Вход</a></div>
-              <div class="dropdown dropdown-login">
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                    <label class="visually-hidden" for="user-login">Логин</label>
-                    <input class="input-block login-email" type="email" placeholder="Электронная почта" name="login" id="user-login">
-                  </p>
-                  <p>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="input-block login-password" type="text" placeholder="Пароль" name="password" id="user-password">
-                  </p>
-                  <button class="button" type="submit">Войти</button>
-                </form>
-                <div class="login-button-help">
-                  <ul class="login-help">
-                    <li><a class="help-link" href="#">Забыли пароль?</a></li>
-                    <li><a class="help-link" href="#">Новая регистрация</a></li>
-                  </ul>
+          <li class="user-login user-login-block">
+                <a class="entrance" href="#">Вход</a>
+                <div class="dropdown dropdown-login">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                      <label class="visually-hidden" for="user-login">Логин</label>
+                      <input class="input-block login-email" type="email" placeholder="Электронная почта" name="login" id="user-login">
+                    </p>
+                    <p>
+                      <label class="visually-hidden" for="user-password">Пароль</label>
+                      <input class="input-block login-password" type="text" placeholder="Пароль" name="password" id="user-password">
+                    </p>
+                  </form>
+                  <div class="login-button-help">
+                    <button class="button" type="submit">Войти</button>
+                    <ul class="login-help">
+                      <li><a class="help-link" href="#">Забыли пароль?</a></li>
+                      <li><a class="help-link" href="#">Новая регистрация</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            <!-- </div> -->
           </li>
           <li class="cart">
             <a class="full-cart" href="#">2 товара</a>
@@ -71,14 +70,14 @@
               <h3 class="visually-hidden">Товары в корзине</h3>
               <table class="cart-table">
                 <tr>
-                  <td><button type="button" name="remove_from_cart"></button></td>
+                  <td><button type="button" class="table-button" name="remove_from_cart"></button></td>
                   <td><img src="img/icecream-cart-1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5 кг х <span class="cart-price">200 руб.</span></td>
                   <td>300 руб.</td>
                 </tr>
                 <tr>
-                  <td><button type="button" name="remove_from_cart"></button></td>
+                  <td><button type="button" class="table-button" name="remove_from_cart"></button></td>
                   <td><img src="img/icecream-cart-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>1,5 кг х <span class="cart-price">300 руб.</span></td>
