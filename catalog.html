@@ -15,14 +15,23 @@
         </a>
         <div class="site-navigation">
           <ul class="navigation-list">
-            <li><a class="current" href="catalog.html">Каталог</a></li>
+            <li class="catalog-link">
+              <a class="current inner-link" href="catalog.html">Каталог</a>
+              <ul class="dropdown-catalog">
+                <li class="dropdown dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
+                <li class="current-dropdown-link"><a class="dropdown-catalog-link" >Сливочное</a></li>
+                <li><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
+                <li><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
+                <li><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="delovery.html"><span>Доставка и оплата</span></a></li>
             <li><a href="about.html"><span>О Компании</span></a></li>
           </ul>
         </div>
         <ul class="user-navigation">
-          <li class="site-search">
-            <div class="site-search-block">
+          <li class="site-search site-search-block">
+            <!-- <div class=""> -->
               <div class="wrap-item"><a href="#">Поиск</a></div>
               <div class="dropdown dropdown-search">
                 <form action="https://echo.htmlacademy.ru" method="get">
@@ -30,10 +39,10 @@
                   <button type="submit" class="visually-hidden"></button>
                 </form>
               </div>
-            </div>
+            <!-- </div> -->
           </li>
-          <li class="user-login">
-            <div class="user-login-block">
+          <li class="user-login-block">
+            <!-- <div class="user-login-block"> -->
               <div class="wrap-item"><a class="entrance" href="#">Вход</a></div>
               <div class="dropdown dropdown-login">
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -54,10 +63,10 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            <!-- </div> -->
           </li>
           <li class="cart">
-            <div class="wrap-item"><a class="full-cart" href="#">2 товара</a></div>
+            <a class="full-cart" href="#">2 товара</a>
             <div class="modal modal-full-cart">
               <h3 class="visually-hidden">Товары в корзине</h3>
               <table class="cart-table">
@@ -101,12 +110,15 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="sort-way">
             <legend>Сортировка:</legend>
-            <select class="slct">
-              <option>по популярности</option>
-              <option>сначала недорогие</option>
-              <option>сначала недорогие</option>
-              <option>по жирности</option>
-            </select>
+             <div class="slct-outer">
+               <select class="slct">
+                <option>по популярности</option>
+                <option>сначала недорогие</option>
+                <option>сначала дорогие</option>
+                <option>по жирности</option>
+              </select>
+              <a class="select-button"></a>
+            </div>
           </fieldset>
           <fieldset class="sort-price">
             <legend>Цена: 100 руб. – 500 руб.</legend>
@@ -120,9 +132,9 @@
           </fieldset>
           <fieldset class="fat-range">
             <legend>Жирность:</legend>
-            <div  class="filter-input">
+            <div  class="filter-input filter-input">
               <p class="radio-fat">
-                <input type="radio" name="fat" value="0" tabindex="0" id="0%">
+                <input type="radio" name="fat" value="0" tabindex="0" id="0%" disabled>
                 <label for="0%">0%</label>
               </p>
               <p class="radio-fat">
@@ -147,7 +159,7 @@
                 <label for="chocolate">шоколадные</label>
               </p>
               <p class="supplements-type">
-                <input type="checkbox" name="supplements" id="sprinkles" checked>
+                <input type="checkbox" name="supplements" id="sprinkles" disabled>
                 <label for="sprinkles">сахарные присыпки</label>
               </p>
               <p class="supplements-type">
