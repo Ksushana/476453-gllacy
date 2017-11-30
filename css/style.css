@@ -231,7 +231,10 @@ input {
  .user-login,
  .cart {
 	position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
+}
+.dropdown {
+  box-shadow: 0px 10px 40px 0px #323232;
 }
 
 .dropdown-catalog {
@@ -984,6 +987,7 @@ left: 8px;
 	flex-direction: column;
 	justify-content: flex-end;
 	z-index: 2;
+  box-shadow: 3px 3px 50px #323232;
 }
 
 .product-item-main:hover .product-item-pop-up {
@@ -1210,6 +1214,18 @@ left: 8px;
 	background-position: no-repeat;
 	top: 139px;
 	left: 267px;
+	z-index: 10
+}
+.map::before {
+	content: "";
+	position: absolute;
+	width: 182px;
+	height: 110px;
+	background-color: transparent;
+	background-image: url("../img/shadow.png");
+	background-position: no-repeat;
+	top: 170px;
+	left: 305px;
 	z-index: 10
 }
 
@@ -1840,4 +1856,17 @@ margin-left: auto;
 
 .pagination-list .prev {
 	display: ;
+}
+
+.inner-footer {
+  position: relative;
+}
+.inner-footer::before {
+  content: "";
+  position: absolute;
+  width: 1146px;
+  height: 1px;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.3);
+  top: -17px;
+
 }
