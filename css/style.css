@@ -100,8 +100,8 @@ input {
 	font-weight: bold;
 	padding: 10px 20px;
 	border-radius: 25px;
-	-webkit-box-shadow: 0px 2px 2px 0px #9e4334;
-	        box-shadow: 0px 2px 2px 0px #9e4334;
+	-webkit-box-shadow: 0px 2px 2px 0px #ac1000;
+	        box-shadow: 0px 2px 2px 0px #ac1000;
 	outline: none;
 	text-align: center;
 	color: #ffffff;
@@ -249,10 +249,13 @@ input {
 	background-color: #f7f6f3;
 	text-decoration: none;
 }
+
 .catalog-link:hover .dropdown-catalog {
 	visibility: visible;
 }
-
+.inner-link:active  {
+  box-shadow:   inset 0px 1px 2px #696969;
+}
 
 .catalog-link,
  .site-search,
@@ -595,12 +598,10 @@ input {
 .cart:hover .modal-full-cart {
 	visibility: visible;
 }
-.cart:hover .full-cart {
-  background-color: #f7f6f3;
-  color: #323232;
-}
 
 .cart .full-cart {
+	color: #323232;
+	background-color: #f7f6f3;
 	position: relative;
 }
 
@@ -792,7 +793,9 @@ outline: none;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
+.slider-slides {
+  display: flex;
+}
 .slider-1,
 .slider-2,
 .slider-3 {
@@ -825,7 +828,7 @@ outline: none;
 	font-weight: 700;
 	width: 670px;
 	margin: auto;
-	margin-bottom: 32px;
+	margin-bottom: 30px;
 	color: #ffffff;
 	text-align: center;
 }
@@ -837,7 +840,7 @@ outline: none;
 	-ms-flex-item-align: center;
 	    align-self: center;
 	border-radius: 30px;
-	padding: 10px 40px;
+	padding: 8px 40px 12px;
 	margin-bottom: 3px;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
@@ -915,7 +918,7 @@ outline: none;
 	        justify-content: flex-start;
 	border-radius: 20px;
 	padding: 23px 21px;
-	padding-top: 18px;
+	padding-top:16px;
 }
 
 .raspberry {
@@ -999,13 +1002,13 @@ outline: none;
 	position: relative;
 }
 
-.product-item-top:hover a {
+/*.product-item-top:hover a {
 	color: #ffbc9e;
 }
 
 .product-item-top:hover span {
 	border-bottom-color: rgba(255, 188, 158, .3);
-}
+}*/
 
 .product-item {
 	width: 268px;
@@ -1037,9 +1040,7 @@ outline: none;
   text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 }
 
-.product-item-top {
-	margin-bottom: 0px;
-}
+
 
 .product-item-top::before {
 	content: "";
@@ -1049,7 +1050,7 @@ outline: none;
 	border-radius: 50%;
 	background-color: white;
 	background-image: url("../img/svg-gllacy/hit.svg");
-	z-index: 10;
+	z-index: 110;
 }
 
 .product-image {
@@ -1212,7 +1213,7 @@ outline: none;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	margin-right: 0;
-	margin-top: 38px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -1585,7 +1586,7 @@ outline: none;
 
 .breadcrumbs li:nth-child(2) {
 	position: relative;
-	width: 73px;
+	width: 70px;
 	padding-right: 17px;
 }
 
@@ -1615,7 +1616,7 @@ outline: none;
 	font-size: 35px;
 	line-height: 41px;
 	margin-top: -13px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
  /*ФИЛЬТРЫ */
 
@@ -1700,9 +1701,10 @@ outline: none;
 	width: 215px;
 	height: 36px;
 	line-height: 18px;
-	background-color: #a9b9af;
+	background:none;
   border: none;
   outline: none;
+  z-index: 100;
 
 }
 .select-button {
@@ -1714,22 +1716,19 @@ outline: none;
 	right: 13px;
 	top: 13px;
 	bottom: 0;
-	z-index: 50;
+	/*z-index: 50;*/
 }
 
 .slct:hover {
 	color: #323232;
-	background-color: #a9b9af;
 }
-.slct:hover .select-button {
- background: url("../img/svg-gllacy/select-arrow-black.svg");
- z-index: 200;
+.slct-outer:hover .select-button {
+ background: url("../img/svg-gllacy/select-arrow-black.svg") no-repeat;
 }
-/*.select-button:hover .slct {
-  	color: #323232;
-  	background-color: #a9b9af;
-}*/
 
+.slct-outer:hover {
+	background-color: #fff;
+}
 
  /*Диапазон*/
 .range-block {
@@ -1971,34 +1970,44 @@ margin-left: auto;
   -webkit-box-pack: end;
     -ms-flex-pack: end;
         justify-content: flex-end;
+  margin-right: 0;
+  margin-bottom: 30px;
 }
 
 .pagination-list .disabled {
 	opacity: 0.5;
 }
 
+
 .pagination-list a {
 	color: #ffffff;
 	line-height: 18px;
 }
 
-.pagination-current a,
-.pagination-item a:focus {
+.pagination-current a {
 	color: #323232;
 	background-color: #ffffff;
 }
 
-.pagination-item a:hover {
+.pagination-item:not(.pagination-current):not(.prev):not(.next) a:hover {
 	background-color: #9db1a5;
 }
 
-
+.pagination-item {
+  margin-left: 2px;
+}
 .pagination-item a {
 	width: 26px;
 	height: 25px;
 	text-align: center;
 	padding-top: 4px;
 	border-radius: 50%;
+}
+
+,
+.pagination-item:focus a {
+	color: #323232;
+	background-color: red;
 }
 
 .inner-footer {

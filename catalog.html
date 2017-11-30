@@ -100,7 +100,7 @@
     <main class="main-container container">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
       <h1 class="catalog-header">Сливочное мороженое</h1>
@@ -110,13 +110,14 @@
           <fieldset class="sort-way">
             <legend>Сортировка:</legend>
              <div class="slct-outer">
-               <select class="slct">
+               <a class="select-button"></a>
+               <select class="slct" name="select">
                 <option>по популярности</option>
                 <option>сначала недорогие</option>
                 <option>сначала дорогие</option>
                 <option>по жирности</option>
               </select>
-              <a class="select-button"></a>
+
             </div>
           </fieldset>
           <fieldset class="sort-price">
@@ -330,7 +331,7 @@
               <img src="img/menta.jpg" alt="Сливочное мороженое с мятным сиропом" width="267" height="267" class="product-image">
             </a>
             <b>
-            <span class="product-price-value">415 &#8381;</span>
+            <span class="product-price-value">420 &#8381;</span>
             <span class="product-price-unit">/кг</span>
             </b>
             <div class="product-item product-item-pop-up">
@@ -339,8 +340,8 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item prev disabled"><a href="#prev">&lt;</a></li>
-          <li class="pagination-item pagination-current"><a href="#1">1</a></li>
+          <li class="pagination-item prev disabled"><a>&lt;</a></li>
+          <li class="pagination-item pagination-current"><a>1</a></li>
           <li class="pagination-item"><a href="#2">2</a></li>
           <li class="pagination-item"><a href="#3">3</a></li>
           <li class="pagination-item"><a href="#4">4</a></li>
