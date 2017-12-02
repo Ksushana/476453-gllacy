@@ -16,7 +16,7 @@
         <div class="site-navigation">
           <ul class="navigation-list">
             <li class="catalog-link">
-              <a class="current inner-link" href="catalog.html">Каталог</a>
+              <a class="current inner-link" href="#">Каталог</a>
               <ul class="dropdown-catalog dropdown">
                 <li class="dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
                 <li class="current-dropdown-link">Сливочное</li>
@@ -132,19 +132,19 @@
             <legend>Жирность:</legend>
             <div  class="filter-input filter-input">
               <p class="radio-fat">
-                <input type="radio" name="fat" value="0" tabindex="0" id="0%">
+                <input class="visually-hidden" type="radio" name="fat" value="0" tabindex="0" id="0%" disabled>
                 <label for="0%">0%</label>
               </p>
               <p class="radio-fat">
-                <input type="radio" name="fat" value="10" tabindex="0" id="10%">
+                <input class="visually-hidden" type="radio" name="fat" value="10" tabindex="0" id="10%" checked>
                 <label for="10%">до 10%</label>
               </p>
               <p class="radio-fat">
-                <input class="radio-input" type="radio" name="fat" value="30" tabindex="0" id="30%">
+                <input class="visually-hidden" class="radio-input" type="radio" name="fat" value="30" tabindex="0" id="30%">
                 <label for="30%">до 30%</label>
               </p>
               <p class="radio-fat">
-                <input type="radio" name="fat" value="+30" tabindex="0" id="+30%">
+                <input class="visually-hidden" type="radio" name="fat" value="+30" tabindex="0" id="+30%">
                 <label for="+30%">выше 30%</label>
               </p>
             </div>
@@ -153,23 +153,23 @@
             <legend>Наполнители:</legend>
             <div  class="filter-input">
               <p class="supplements-type">
-                <input type="checkbox" name="supplements" id="chocolate" checked>
+                <input  class="visually-hidden" type="checkbox" name="supplements" id="chocolate" checked>
                 <label for="chocolate">шоколадные</label>
               </p>
               <p class="supplements-type">
-                <input type="checkbox" name="supplements" id="sprinkles" checked>
+                <input class="visually-hidden" type="checkbox" name="supplements" id="sprinkles" checked>
                 <label for="sprinkles">сахарные присыпки</label>
               </p>
               <p class="supplements-type">
-                <input type="checkbox" name="supplements" id="fruits">
+                <input class="visually-hidden" type="checkbox" name="supplements" id="fruits" disabled>
                 <label for="fruits">фрукты</label>
               </p>
               <p class="supplements-type">
-                <input type="checkbox" name="supplements" id="syrup">
+                <input class="visually-hidden" type="checkbox" name="supplements" id="syrup">
                 <label for="syrup">сиропы</label>
               </p>
               <p class="supplements-type">
-                <input type="checkbox" name="supplements" id="jam">
+                <input class="visually-hidden" type="checkbox" name="supplements" id="jam">
                 <label for="jam">джемы</label>
               </p>
             </div>
