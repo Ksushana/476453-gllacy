@@ -866,7 +866,7 @@ input[type="radio"].visually-hidden {
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: 700;
-	width: 670px;
+	width: 700px;
 	margin: auto;
 	margin-bottom: 30px;
 	color: #ffffff;
@@ -1363,62 +1363,27 @@ input[type="radio"].visually-hidden {
 	position: relative;
   margin: 0 auto;
 	width: 1160px;
+	padding-top: 30px;
 }
 iframe {
 	position: absolute;
 	display: block;
 	overflow: hidden;
-
+	top: 0;
 }
 
-/*.map-container {
-	/*width: 1200px;
-	height: 428px;
-	margin: 0 auto;
-	position: absolute;
-	z-index: 10;
-}*/
-/*iframe {
-	z-index: 10;
-}*/
-/*.map::after {
-	content: "";
-	position: absolute;
-	width: 80px;
-	height: 140px;
-	background-color: transparent;
-	background-image: url("../img/svg-gllacy/pin.svg");
-	background-position: no-repeat;
-	top: 139px;
-	left: 267px;
-	z-index: 10;
-
-}
-
-.map::before {
-	content: "";
-	position: absolute;
-	width: 182px;
-	height: 110px;
-	background-color: transparent;
-	background-image: url("../img/shadow.png");
-	background-position: no-repeat;
-	top: 170px;
-	left: 305px;
-	z-index: 10;
-
-}*/
 
 .address-block {
 	position: absolute;
 	top: 61px;
-	right: 26px;
+	right: 0px;
 	width: 302px;
-	min-height: 225px;
+	height: 304px;
 	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 10px;
 	padding: 30px 22px;
 	z-index: 100;
+
 }
 
 .address-block .tel {
@@ -1993,8 +1958,7 @@ input[type=checkbox] {
 
 
 /*Обратная связь*/
-.feedback {
-display: none;
+.feedback-wrapper {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -2002,17 +1966,13 @@ display: none;
 	height: 442px;
 	margin-top:-238px;
 	margin-left: -221px;
-	z-index: 200;
 }
 .feedback-block {
-	display: none;
-		position: fixed;
-		top: 50%;
-		left: 50%;
+		position: flex;
+
 		width: 477px;
 		height: 442px;
-		margin-top:-238px;
-		margin-left: -221px;
+
 		z-index: 200;
 	background-color: #f8f7f4;
 	width: 477px;
