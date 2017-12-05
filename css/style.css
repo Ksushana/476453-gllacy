@@ -14,35 +14,35 @@ body {
 	background-color: #849d8f;
 }
 
-#btn-1:checked~.page-wrapper {
+.btn-1:checked~.page-wrapper {
 	background-color: #849d8f;
 	background-image: url(../img/slider-1.png);
 	z-index: 100;
 }
 
-#btn-1:checked~.page-wrapper .slider-1 {
+.btn-1:checked~.page-wrapper .slider-1 {
 	display: block;
 	z-index: 100;
 }
 
-#btn-2:checked~.page-wrapper {
+.btn-2:checked~.page-wrapper {
 	background-color: #8996a6;
 	background-image: url(../img/slider-2.png);
 	z-index: 100;
 }
 
-#btn-2:checked~.page-wrapper .slider-2 {
+.btn-2:checked~.page-wrapper .slider-2 {
 	display: block;
 	z-index: 100;
 }
 
-#btn-3:checked~.page-wrapper {
+.btn-3:checked~.page-wrapper {
 	background-color: #9d8b84;
 	background-image: url(../img/slider-3.png);
 	z-index: 100;
 }
 
-#btn-3:checked~.page-wrapper .slider-3 {
+.btn-3:checked~.page-wrapper .slider-3 {
 	display: block;
 	z-index: 100;
 }
@@ -914,9 +914,9 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-#btn-1:checked~.page-wrapper label[for="btn-1"],
-#btn-2:checked~.page-wrapper label[for="btn-2"],
-#btn-3:checked~.page-wrapper label[for="btn-3"] {
+.btn-1:checked~.page-wrapper label[for="btn-1"],
+.btn-2:checked~.page-wrapper label[for="btn-2"],
+.btn-3:checked~.page-wrapper label[for="btn-3"] {
 	background-color: #ffffff;
 }
 
