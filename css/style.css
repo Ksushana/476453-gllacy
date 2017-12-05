@@ -1364,7 +1364,7 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 	image-orientation: 100px 100px;
 	margin: 0 auto;
-	background-position: green;
+	background-color: green;
 	background-image: url("../img/map-full.jpg");
 	background-position: 0 -107px;
 }
@@ -1374,11 +1374,13 @@ input[type="radio"].visually-hidden {
 	width: 1160px;
 	padding-top: 30px;
 }
+
 iframe {
 	position: absolute;
 	display: block;
 	overflow: hidden;
 	top: 0;
+	border-width: 0;
 }
 
 
@@ -1888,7 +1890,7 @@ white-space: nowrap;
 	width: 25px;
 	height: 25px;
 	background-image: url("../img/svg-gllacy/radio-off.svg");
-	top: -2px;
+	top: -3px;
 	left: -30px;
 	opacity: 0.8;
 }
