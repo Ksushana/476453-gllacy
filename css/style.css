@@ -98,7 +98,6 @@ textarea[placeholder] {
 	margin: 0 auto;
 	max-width: 1200px;
 	min-width: 1200px;
-	/*background-color: pink;*/
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -182,7 +181,7 @@ input[type="radio"].visually-hidden {
 .input-block:focus {
 	-webkit-box-shadow: 0 0 0 2px #8fbdec;
 	box-shadow: 0 0 0 2px #8fbdec;
-			outline: none;
+	outline: none;
 }
 
 .dropdown,
@@ -997,7 +996,8 @@ input[type="radio"].visually-hidden {
 
 .raspberry a,
 .chocolate a {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 	padding: 10px 21px;
 }
 
@@ -1040,8 +1040,6 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	margin-top: 13px;
 	padding: 0;
-	/*padding-right: 2px;
-	padding-left: 2px;*/
 	z-index: 100;
 }
 
@@ -1137,16 +1135,6 @@ input[type="radio"].visually-hidden {
 	top: -5px;
 	border-radius: 5px;
 	padding-top: 350px;
-	/*display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;*/
 	z-index: 2;
 	-webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, .4);
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, .4);
@@ -1372,7 +1360,6 @@ input[type="radio"].visually-hidden {
 
 .map {
 	position: relative;
-	/*width: 1200px;*/
 	height: 428px;
 	overflow: hidden;
 	image-orientation: 100px 100px;
@@ -1788,7 +1775,6 @@ outline: 2px solid #1e90ff;
 	right: 13px;
 	top: 13px;
 	bottom: 0;
-	/*z-index: 50;*/
 }
 
 .slct:hover {
@@ -1874,17 +1860,6 @@ outline: 2px solid #1e90ff;
 
 /*Жирность*/
 
-/*.fat-range {
-	width: 415px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}*/
-
-/*input[type=radio],
-input[type=checkbox] {
-	visibility: hidden;
-}*/
 
 .filter-input p {
 	margin: 0;
@@ -2005,18 +1980,17 @@ white-space: nowrap;
 	margin-left: -221px;
 }
 .feedback-block {
-		position: flex;
-		width: 477px;
-		height: 442px;
-		z-index: 200;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 477px;
+	height: 442px;
+	z-index: 200;
 	background-color: #f8f7f4;
 	width: 477px;
 	height: 442px;
 	padding: 25px;
 	border-radius: 10px;
-	/*display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;*/
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -2065,6 +2039,8 @@ white-space: nowrap;
 }
 
 .feedback-show {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -2100,12 +2076,7 @@ white-space: nowrap;
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-/*.feedback-wrapper {
-	background-color: #000;
-	opacity: .3;
-	width: 100%;
-	height: 100%;
-}*/
+
 /*Пагинатор*/
 
 .pagination-list {
