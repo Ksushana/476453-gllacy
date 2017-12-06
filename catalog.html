@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/mini.style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="">
@@ -18,11 +18,11 @@
             <li class="catalog-link">
               <a class="current inner-link" href="#">Каталог</a>
               <ul class="dropdown-catalog dropdown">
-                <li class="dropdown-catalog-new"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
-                <li class="current-dropdown-link">Сливочное</li>
-                <li><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
-                <li><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
-                <li><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
+                <li class="dropdown-catalog-new dropdown-catalog-item"><a class="dropdown-catalog-link" href="latest.html">Новинки</a></li>
+                <li class="current-dropdown-link dropdown-catalog-item">Сливочное</li>
+                <li class="dropdown-catalog-item"><a class="dropdown-catalog-link" href="sherbets.html">Щербеты</a></li>
+                <li class="dropdown-catalog-item"><a class="dropdown-catalog-link" href="popsicles.html">Фруктовый лед</a></li>
+                <li class="dropdown-catalog-item"><a class="dropdown-catalog-link" href="mellorine.html">Мелорин</a></li>
               </ul>
             </li>
             <li><a href="delovery.html"><span>Доставка и оплата</span></a></li>
@@ -109,7 +109,7 @@
           <fieldset class="sort-way">
             <legend>Сортировка:</legend>
             <div class="slct-outer">
-              <a class="select-button"></a>
+              <button class="select-button"></button>
               <select class="slct" name="select">
                 <option>по популярности</option>
                 <option>сначала недорогие</option>
