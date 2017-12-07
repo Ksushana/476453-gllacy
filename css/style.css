@@ -1033,52 +1033,65 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 0px;
 }
 
-.product-header {
+/*.product-header {
 	position: relative;
-	display: inline-block;
-	/*display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;*/
+	display: block;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 500;
 	text-align: center;
-	margin: 13px 0 0;
-	padding: 0;
+	/*margin: 13px 0 0;*/
+	/*padding: 0;
 	z-index: 100;
 	color: #ffffff;
-		text-decoration: none;
-}
+	text-decoration: none;
+	background-color:red;
+	display:inline-block;
+}*/
 
 /*.product-header span {
 	margin-top: 4px;
 	border-bottom: 1px solid rgba(225, 225, 225, .2);
 }*/
 
-.product-header:hover {
+.product-link:hover {
   color: #ffbc9e;
 }
 /*.product-header:hover span {
 	border-bottom: 1px solid #ffbc9e;*/
 
-/*.products-list a{
-}*/
 
-.product-header::after {
+/*.dg::after {
 	content: "";
 	position: absolute;
+	top:21px;
+	left:0;
 height: 1px;
 width: 100%;
 background-color: #fff;
 
+}*/
+/*.product-header::after {
+	content: "";
+	position: absolute;
+	top:21px;
+	left:0;
+height: 1px;
+width: 100%;
+background-color: #fff;
+
+}*/
+.products a{
+	text-align:center;
+	margin-top:13px;
+
+
 }
+.product-link{
+	display:inline;
+  border-bottom:1px solid rgba(225, 225, 225, .2);
+ z-index: 100;}
+
 
 .product-item {
 	width: 268px;
@@ -1092,7 +1105,7 @@ background-color: #fff;
 	margin-right: 0;
 }
 
-.product-item a {
+/*.product-item a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1100,7 +1113,7 @@ background-color: #fff;
 	-webkit-box-direction: reverse;
 	-ms-flex-direction: column-reverse;
 	flex-direction: column-reverse;
-}
+}*/
 
 .product-item .price {
 	font-weight: bold;
@@ -2135,6 +2148,20 @@ white-space: nowrap;
 .pagination-list .disabled {
 	opacity: 0.5;
 }
+.pagination-list .prev,
+.pagination-list .next {
+	width: 8px;
+	height: 12px;
+	background-image: url("../img/svg-gllacy/icon-right-small.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+	align-self: center;
+}
+.pagination-list .prev {
+	  transform: rotate(180deg);
+		margin-right: 4px;
+	}
+
 
 .pagination-list a {
 	color: #ffffff;
@@ -2151,7 +2178,7 @@ white-space: nowrap;
 }
 
 .pagination-item {
-	margin-left: 2px;
+	margin-left: 5px;
 }
 
 .pagination-item a {
