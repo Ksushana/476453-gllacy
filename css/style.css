@@ -1290,20 +1290,19 @@ z-index: 1;
 }
 
 .subscribe {
-	position: relative;
+	/*position: relative;*/
 	width: 560px;
 	min-height: 220px;
 	background-color: #ffffff;
 	background-image: url("../img/svg-gllacy/bg-post.svg");
 	background-position: 0 0;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	border-radius: 10px;
 }
 
 .subscribe-inner {
-	position: absolute;
-	top: 6px;
-	left: 6px;
+	/*position: absolute;*/
+	margin: 6px;
 	width: 548px;
 	background-color: #f8f7f4;
 	border-radius: 10px;
@@ -1735,7 +1734,7 @@ outline: 2px solid #1e90ff;
 	box-shadow: inset 0px 0px 0px 2px #fbfcfb;
 	-ms-flex-item-align: end;
 	align-self: flex-end;
-	padding: 6px 20px;
+	padding: 6px 23px;
 }
 
 .filter-button:hover {
@@ -2129,8 +2128,11 @@ white-space: nowrap;
 }
 .pagination-list .prev {
 	  transform: rotate(180deg);
-		margin-right: 4px;
+		margin-right: 6px;
 	}
+	.pagination-list .next {
+			margin-left: 15px;
+		}
 
 
 .pagination-list a {
