@@ -163,15 +163,15 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	border: none;
 	background-color: #ffffff;
-	-webkit-box-shadow: 0 0 0 1px #999999;
-	box-shadow: 0 0 0 1px #999999;
+	-webkit-box-shadow: 0 0 0 1px #d3d3d2;
+	box-shadow: 0 0 0 1px #d3d3d2;
 	border-radius: 3px;
 }
 
 .input-block:hover {
 	border-radius: 3px;
-	-webkit-box-shadow: 0 0 0 2px #999999;
-	box-shadow: 0 0 0 2px #999999;
+	-webkit-box-shadow: 0 0 0 2px #c7c6c5;
+	box-shadow: 0 0 0 2px #c7c6c5;
 	;
 }
 
@@ -761,7 +761,7 @@ input[type="radio"].visually-hidden {
 .cart-price {
 	color: #999999;
 	padding-left: 4px;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .cart-table::after {
@@ -893,6 +893,7 @@ input[type="radio"].visually-hidden {
 
 .slider-button {
 	display: inline-block;
+	vertical-align: baseline;
 	font-size: 32px;
 	line-height: 44px;
 	-ms-flex-item-align: center;
@@ -905,6 +906,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: baseline;
 	width: 17px;
 	height: 17px;
 	border-radius: 50%;
@@ -1032,7 +1034,9 @@ input[type="radio"].visually-hidden {
 }
 
 .product-header {
-	display: -webkit-box;
+	position: relative;
+	display: inline-block;
+	/*display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
@@ -1041,31 +1045,39 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	align-items: center;
+	align-items: center;*/
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 21px;
+	font-weight: 500;
 	text-align: center;
 	margin: 13px 0 0;
 	padding: 0;
 	z-index: 100;
+	color: #ffffff;
+		text-decoration: none;
 }
 
-.product-header span {
+/*.product-header span {
 	margin-top: 4px;
 	border-bottom: 1px solid rgba(225, 225, 225, .2);
-}
+}*/
 
 .product-header:hover {
   color: #ffbc9e;
 }
-.product-header:hover span {
-	border-bottom: 1px solid #ffbc9e;
-}
-.products-list a,
-.footer-copyright a {
-	color: #ffffff;
-	text-decoration: none;
-	position: relative;
+/*.product-header:hover span {
+	border-bottom: 1px solid #ffbc9e;*/
+
+/*.products-list a{
+}*/
+
+.product-header::after {
+	content: "";
+	position: absolute;
+height: 1px;
+width: 100%;
+background-color: #fff;
+
 }
 
 .product-item {
@@ -1090,7 +1102,8 @@ input[type="radio"].visually-hidden {
 	flex-direction: column-reverse;
 }
 
-.product-item b {
+.product-item .price {
+	font-weight: bold;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1405,12 +1418,14 @@ iframe {
 
 .address-block b {
 	display: inline-block;
+	vertical-align: baseline;
 	font-size: 18px;
 	line-height: 24px;
 	padding-bottom: 16px;
 }
 .address-block .tel {
 	display: inline-block;
+	vertical-align: baseline;
 	color: #323232;
 	font-weight: bold;
 	font-size: 18px;
@@ -1592,7 +1607,11 @@ iframe {
 	width: 190px;
 	margin-left: auto;
 }
-
+.footer-copyright a {
+	color: #ffffff;
+	text-decoration: none;
+	position: relative;
+}
 .footer-copyright p {
 	color: #ffffff;
 	display: -webkit-box;
@@ -1757,6 +1776,7 @@ outline: 2px solid #1e90ff;
 	background-color: #a9b9af;
 	width: 193px;
 	display: inline-block;
+	vertical-align: baseline;
 	position: relative;
 	border-radius: 15px;
 	overflow: hidden;
@@ -1923,7 +1943,8 @@ white-space: nowrap;
 	opacity: 1;
 }
 
-.radio-fat input[type="radio"]:disabled+label::before {
+.radio-fat input[type="radio"]:disabled+label::before,
+.radio-fat input[type="radio"]:disabled+label {
 	opacity: 0.4;
 }
 
@@ -1962,9 +1983,10 @@ white-space: nowrap;
 .supplements-type label::before {
 	content: "";
 	position: absolute;
-	width: 23px;
+	width: 27px;
 	height: 23px;
 	background-image: url("../img/svg-gllacy/checkbox-off.svg");
+	background-repeat: no-repeat;
 	opacity: 0.8;
 	top: -1px;
 	left: -32px;
@@ -1974,7 +1996,8 @@ white-space: nowrap;
 	opacity: 1;
 }
 
-.supplements-type input[type="checkbox"]:disabled+label::before {
+.supplements-type input[type="checkbox"]:disabled+label::before,
+.supplements-type input[type="checkbox"]:disabled+label {
 	opacity: 0.4;
 }
 
