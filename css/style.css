@@ -1056,7 +1056,6 @@ top:-5px;
 left: -13px;
 width: 291px;
 height: 125%;
-/*padding-top: 100%;*/
 padding-left: 13px;
 padding-right: 13px;
 padding-bottom: 17px;
@@ -1091,7 +1090,7 @@ z-index: 1;
   border-bottom:1px solid rgba(225, 225, 225, .2);
 }
 
-.product-link:hover {
+.product-header:hover .product-link {
 	  color: #ffbc9e;
 		border-bottom:1px solid rgba(	255, 188, 158, .2);
 	}
@@ -1140,12 +1139,6 @@ z-index: 1;
 
 
 
-
-/*.product-item-main:hover .product-item-pop-up {
-	visibility: visible;
-	z-index: 2;
-}*/
-
 .product-item-main:hover img {
 	z-index: 100;
 }
@@ -1160,10 +1153,6 @@ z-index: 1;
 .product-item-pop-up .product-header {
 	margin-bottom: 17px;
 }
-
-/*.product-item-pop-up b {
-	top: 223px;
-}*/
 
 
 /*Описание магазина */
@@ -1252,7 +1241,7 @@ z-index: 1;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-right: 0;
+	/*margin-right: 0;*/
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -1290,7 +1279,6 @@ z-index: 1;
 }
 
 .subscribe {
-	/*position: relative;*/
 	width: 560px;
 	min-height: 220px;
 	background-color: #ffffff;
@@ -1301,7 +1289,6 @@ z-index: 1;
 }
 
 .subscribe-inner {
-	/*position: absolute;*/
 	margin: 6px;
 	width: 548px;
 	background-color: #f8f7f4;
