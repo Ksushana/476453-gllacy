@@ -1055,10 +1055,10 @@ position: absolute;
 top:-5px;
 left: -13px;
 width: 291px;
-height: 125%;
+height: calc(100% + 80px);
 padding-left: 13px;
 padding-right: 13px;
-padding-bottom: 17px;
+padding-bottom: 23px;
 background-color: rgba(255,255,255,.3);
 text-align: center;
 border-radius: 5px;
@@ -1148,6 +1148,7 @@ z-index: 1;
 	text-decoration: none;
 	padding-right: 17px;
 	padding-left: 17px;
+
 }
 
 .product-item-pop-up .product-header {
@@ -1714,6 +1715,8 @@ outline: 2px solid #1e90ff;
 }
 
 .filter-button {
+	font-size: 16px;
+	line-height: 18px;
 	background-color: #9cb0a4;
 	font-weight: 500;
 	background-image: none;
@@ -1721,7 +1724,7 @@ outline: 2px solid #1e90ff;
 	box-shadow: inset 0px 0px 0px 2px #fbfcfb;
 	-ms-flex-item-align: end;
 	align-self: flex-end;
-	padding: 6px 23px;
+	padding: 9px 30px;
 }
 
 .filter-button:hover {
